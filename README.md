@@ -1,1 +1,3 @@
-# merge-externo-multithreaded
+# Relatório do script Merge Sort Externo com threads
+
+Analisando 
