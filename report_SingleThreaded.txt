@@ -1,0 +1,4 @@
+Time to split: 2.733590602874756
+Time to merge: 13.91094160079956
+Total time: 16.64458417892456
+File successfully ordered

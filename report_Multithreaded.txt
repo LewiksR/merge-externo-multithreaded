@@ -1,0 +1,5 @@
+Time to split: 2.7074942588806152
+Time to merge: 18.332414627075195
+Total time: 21.039957284927368
+lastWrittenSplit: 26
+File successfully sorted

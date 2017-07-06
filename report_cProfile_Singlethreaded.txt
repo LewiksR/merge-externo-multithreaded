@@ -1,0 +1,33 @@
+Time to split: 3.3559937477111816
+Time to merge: 16.841793298721313
+Total time: 20.197842359542847
+File successfully ordered
+         35394499 function calls in 21.875 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:989(_handle_fromlist)
+      233    0.000    0.000    0.001    0.000 genericpath.py:27(isfile)
+        1   10.479   10.479   21.875   21.875 orderByCEP_oldButWorking.py:3(<module>)
+      215    0.000    0.000    0.000    0.000 {built-in method _stat.S_ISREG}
+        1    0.000    0.000   21.875   21.875 {built-in method builtins.exec}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+ 10231775    0.846    0.000    0.846    0.000 {built-in method builtins.len}
+       75    0.000    0.000    0.000    0.000 {built-in method builtins.print}
+      279    0.007    0.000    0.007    0.000 {built-in method io.open}
+      138    0.169    0.001    0.169    0.001 {built-in method posix.remove}
+       74    0.027    0.000    0.027    0.000 {built-in method posix.rename}
+      233    0.001    0.000    0.001    0.000 {built-in method posix.stat}
+        5    0.000    0.000    0.000    0.000 {built-in method time.time}
+   699307    0.051    0.000    0.051    0.000 {method 'append' of 'list' objects}
+      139    0.001    0.000    0.001    0.000 {method 'close' of '_io.BufferedReader' objects}
+      139    0.002    0.000    0.002    0.000 {method 'close' of '_io.BufferedWriter' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+  5397228    1.395    0.000    1.395    0.000 {method 'pack' of 'Struct' objects}
+  6096675    2.346    0.000    2.346    0.000 {method 'read' of '_io.BufferedReader' objects}
+       70    0.245    0.003    0.245    0.003 {method 'sort' of 'list' objects}
+  7570681    2.460    0.000    2.460    0.000 {method 'unpack' of 'Struct' objects}
+  5397228    3.844    0.000    3.844    0.000 {method 'write' of '_io.BufferedWriter' objects}
+
+
