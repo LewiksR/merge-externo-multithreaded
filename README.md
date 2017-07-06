@@ -32,3 +32,6 @@ No relatório gerado pelo utilitário cProfile, da linguagem Python, o tempo de 
 - Método _write_ reduzido de 3.844 segundos para 0.420s (**10%** do tempo)
   - > 5397228    3.844    0.000    3.844    0.000 {method 'write' of '_io.BufferedWriter' objects}
   - > 699307    0.420    0.000    0.420    0.000 {method 'write' of '_io.BufferedWriter' objects}
+
+Apesar dessas melhoras, isso não impediu o tempo total de execução de aumentar. Não tenho certeza se é devido à maneira que utilizei de esperar os threads acabarem de executar ou por concorrêcia ao acesso no disco, como foi uma hipótese do professor.
+Eu havia descartado essa possibilidade de concorrência devido à redução dos tempos individuais de _write_ e _read_, mas ao analisar os resultados de cProfile com mais cuidado, notei que o número de chamadas a _pack_ e _write_ foi reportado como exatamente o número de entradas de endereço no arquivo. Pela lógica do algoritmo _merge sort_ isso é impossível de ser verdade, já que as entradas individuais são reescritas diversas vezes toda vez que dois arquivos sao mesclados novamente. Portato, minha conclusão é que a hipótese do professor é verdadeira, e que o cProfile não reporta os resultados de programas multithread corretamente.
